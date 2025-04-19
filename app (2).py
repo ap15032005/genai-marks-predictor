@@ -36,3 +36,13 @@ if st.button("Predict My Score"):
         st.info("💡 AI Tips:\n" + advice)
     except Exception as e:
         st.error("⚠️ Error generating advice. Check your API key or try again.")
+reqs = """
+streamlit
+numpy
+scikit-learn
+openai
+"""
+
+with open("requirements.txt", "w") as f:
+    f.write(reqs)
+
